@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="50" viewBox="0 0 500 50">
+<style>
+text { fill:#e6edf3; font-family:monospace; font-size:22px; }
+.reveal { animation:type 12s linear infinite; }
+@keyframes type { 0% {width:0} 19% {width:500px} 80% {width:500px} 82% {width:0} 100% {width:0} }
+.cursor { animation:blink 1s step-end infinite, follow 12s linear infinite; }
+@keyframes blink { 50% {opacity:0} }
+@keyframes follow { 0% {transform:translateX(0)} 19% {transform:translateX(450px)} 80% {transform:translateX(450px)} 82% {transform:translateX(0)} 100% {transform:translateX(0)} }
+</style>
+<clipPath id="cl"><rect class="reveal" x="0" y="0" height="50"/></clipPath>
+<text x="24" y="33" clip-path="url(#cl)">C++ | TypeScript | React | Node.js</text>
+<rect class="cursor" x="24" y="12" width="11" height="25" fill="#e6edf3"/>
+</svg>
